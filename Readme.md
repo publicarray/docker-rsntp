@@ -1,3 +1,5 @@
+# Docker container for [rsntp](https://github.com/mlichvar/rsntp)
+
 ```sh
 # Build
 docker build -t publicarray/rsntp .
