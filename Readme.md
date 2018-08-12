@@ -16,7 +16,7 @@ docker run -d --restart always --name rsntp -p123:123/udp publicarray/rsntp
 
 ```sh
 # get current status:
-$ contrack -C
+$ conntrack -C
 $ sysctl net.netfilter.nf_conntrack_max
 
 # disable conntrack on NTP port 123
