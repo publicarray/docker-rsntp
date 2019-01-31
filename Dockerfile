@@ -1,4 +1,4 @@
-FROM alpine:3.8
+FROM alpine:3.9
 LABEL maintainer "publicarray"
 LABEL description "High-performance NTP server written in Rust. https://github.com/mlichvar/rsntp"
 ENV REVISION 0
