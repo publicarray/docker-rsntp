@@ -15,7 +15,7 @@ RUN set -x && \
     cp target/release/rsntp /usr/local/bin/rsntp
 
 #------------------------------------------------------------------------------#
-FROM alpine:3.8
+FROM alpine:3.9
 
 ENV RUN_DEPS libgcc runit shadow curl
 
