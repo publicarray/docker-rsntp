@@ -6,11 +6,9 @@ services:
     command: -d chrony
     deploy:
       replicas: 1
-      resources:
-        reservations:
-          cpus: '0.3'
-          memory: 50M
       restart_policy:
         condition: on-failure
     ports:
-      - "123:123"
+      - target: 123
+        published: 123
+        mode: host
