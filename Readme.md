@@ -8,8 +8,8 @@ docker run -it --rm --name rsntp -p123:123/udp publicarray/rsntp
 # Or use your own arguments
 docker run -it --rm --name rsntp -p123:123/udp publicarray/rsntp -- -h
 docker run -it --rm --name rsntp -p123:123/udp publicarray/rsntp -d ntp
-# Always restart and run as a daemon
-docker run -d --restart always --name rsntp -p123:123/udp publicarray/rsntp
+# Always restart, run as a daemon and limit logfile size
+docker run -d --restart always --name rsntp -p123:123/udp publicarray/rsntp --log-opt max-size=1m --log-opt max-file=3
 ```
 
 ## Prevent conntrack from filling up
